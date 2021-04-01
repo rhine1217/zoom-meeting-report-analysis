@@ -1,0 +1,23 @@
+{
+    "name": "Zoom Meeting Attendance Analysis",
+    "description": "Convert your Zoom usage report into charts and useful data and see user engagement throughout a meeting.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "32": "/images/icon32.png",
+            "64": "/images/icon64.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.zoom.us/*/report"],
+            "js": ["popup_inject.js"]
+        }
+    ],
+    "icons": {
+        "32": "/images/icon32.png",
+        "64": "/images/icon64.png"
+    }
+  }

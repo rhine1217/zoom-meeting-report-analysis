@@ -1,0 +1,45 @@
+* {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    width: 360px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+label {
+    width: 100%;
+}
+
+.row {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.jumbotron {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+
+.col-5 {
+    padding-left: 0;
+}
+
+canvas {
+    margin-bottom: 1rem;
+}
+
+.bottom-section {
+    padding-bottom: 0;
+}
