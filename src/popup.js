@@ -3,7 +3,7 @@ const intervalSelector = document.getElementById('interval-selector')
 const exportBtn = document.getElementById('export-button')
 const radioBtns = document.querySelectorAll('.radio-btn')
 const exportSettings = document.getElementById('export-settings')
-let output, content, preparedData;
+let data, output, content, preparedData;
 
 /* 
 Data Fields:
@@ -55,6 +55,7 @@ const csvParse = (csv) => {
 
 intervalSelector.addEventListener('change', (e) => {
     settings.timeInterval = parseInt(intervalSelector.value)
+    output = genAttnCount(data)
     genChart(output)
     prepDownload(output)
 })
@@ -62,8 +63,7 @@ intervalSelector.addEventListener('change', (e) => {
 fileSelector.addEventListener('change', async (event) => {
 
     const fileList = event.target.files;
-    const data = await readFileAsync(fileList[0])
-
+    data = await readFileAsync(fileList[0])
     output = genAttnCount(data)
     genChart(output)
     exportSettings.classList.remove('d-none')
@@ -80,7 +80,7 @@ radioBtns.forEach((elem) => {
     })
 })
 
-function prepDownload() {
+function prepDownload(output) {
 
     if (settings.exportFormat === 'csv') {
         content = output.labels.join(",") + "\r\n" + output.count.join(",")
