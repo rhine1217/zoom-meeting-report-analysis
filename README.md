@@ -12,7 +12,7 @@
 
 ### :rocket: how to use it
 
-* Download the extension at the Chrome Web Store (link)
+* Download the extension at the Chrome Web Store (link TBD - listing pending)
 * Go to your Zoom account → Reports → Usage Reports → Usage
   
   ![find report](./assets/screenshot/find_report.png)
@@ -28,4 +28,4 @@
 * You can choose to see use count at different time intervals, and export the parsed data in CSV or JSON format to use in any data analysis tool you prefer (Excel, Google Sheets, etc.)
 
 ### :bookmark: disclaimer
-Not affiliated with Zoom. 
+Not affiliated with Zoom. For any questions, issues, comments, requests, feel free to submit an issue here.
