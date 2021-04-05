@@ -55,9 +55,11 @@ const csvParse = (csv) => {
 
 intervalSelector.addEventListener('change', (e) => {
     settings.timeInterval = parseInt(intervalSelector.value)
-    output = genAttnCount(data)
-    genChart(output)
-    prepDownload(output)
+    if (data) {
+        output = genAttnCount(data)
+        genChart(output)
+        prepDownload(output)
+    }
 })
 
 fileSelector.addEventListener('change', async (event) => {
