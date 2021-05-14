@@ -12,7 +12,7 @@
 
 ### :rocket: how to use it
 
-* Download the extension at the Chrome Web Store (link TBD - listing pending)
+* Download the extension at the Chrome Web Store ([here](https://chrome.google.com/webstore/detail/zoom-meeting-report-analy/bpepajnpjedkmjjfnifgnbenmeiejmlj?hl=en&authuser=0))
 * Go to your Zoom account → Reports → Usage Reports → Usage
   
   ![find report](./assets/screenshot/find_report.png)
